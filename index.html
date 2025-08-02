@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgentTalk - AI Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="chat-container">
+        <header class="chat-header">
+          <div class="header-content">
+            <div class="logo">
+              <i class="fas fa-robot"></i>
+              <h1>AgentTalk</h1>
+            </div>
+            <div class="status-indicator">
+              <span class="status-dot"></span>
+              <span>Online</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="chat-messages" id="chat-messages">
+          <div class="message bot-message">
+            <div class="message-avatar">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="message-content">
+              <p>Hello! I'm your AI assistant. How can I help you today?</p>
+              <span class="message-time">10:30 AM</span>
+            </div>
+          </div>
+
+          <div class="message user-message">
+            <div class="message-content">
+              <p>Hi there! What can you do?</p>
+              <span class="message-time">10:31 AM</span>
+            </div>
+            <div class="message-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input-container">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="user-input"
+              class="chat-input"
+              placeholder="Type your message..."
+              aria-label="Type your message"
+            />
+            <button
+              id="send-button"
+              class="send-button"
+              aria-label="Send message"
+            >
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+          <div class="typing-indicator" id="typing-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
