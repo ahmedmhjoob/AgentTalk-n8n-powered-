@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Event listeners
+  // Event listenersvv
   sendButton.addEventListener("click", sendMessage);
   userInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
