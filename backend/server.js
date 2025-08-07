@@ -22,13 +22,8 @@ app.post("/message", async (req, res) => {
 
     // Forward the message to the n8n Webhook
     const n8nResponse = await axios.post(
-      "https://ahmedmhjoob.app.n8n.cloud/webhook-test/chatbot",
-      { message },
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
+      "https://ahmedmhjoob.app.n8n.cloud/webhook/chatbot",
+      { message }
     );
 
     console.log("Response from n8n:", n8nResponse.data);
